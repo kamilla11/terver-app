@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Views.MainPage"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+             <Label
+                Text="Выберите операцию:"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="40"
+                Margin="50"
+                HorizontalOptions="Center" />
+
+             <Label
+                Text="Перестановки"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="30"
+                HorizontalOptions="Center" />
+
+            <HorizontalStackLayout
+                Spacing="25"
+                HorizontalOptions="Center">
+
+                <Button
+                x:Name="PermWithoutRepBtn"
+                Text="Без повторений"
+                Clicked="OnPermWithoutRepClicked"/>
+
+                 <Button
+                x:Name="PermWithRepBtn"
+                Text="С повторениями"
+                Clicked="OnPermWithRepClicked"/>
+
+            </HorizontalStackLayout>
+
+            <Label
+                Text="Сочетания"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="30"
+                HorizontalOptions="Center" />
+
+             <HorizontalStackLayout
+                Spacing="25"
+                HorizontalOptions="Center">
+
+                <Button
+                x:Name="CombWithoutRepBtn"
+                Text="Без повторений"
+                Clicked="OnCombWithoutRepClicked"/>
+
+                 <Button
+                x:Name="CombWithRepBtn"
+                Text="С повторениями"
+                Clicked="OnCombWithRepClicked"
+                />
+
+            </HorizontalStackLayout>
+
+
+            <Label
+                Text="Размещения"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="30"
+                HorizontalOptions="Center" />
+
+             <HorizontalStackLayout
+                Spacing="25"
+                HorizontalOptions="Center">
+
+                <Button
+                x:Name="PlcmntWithoutRepBtn"
+                Text="Без повторений"
+                Clicked="OnPlcmntWithoutRepClicked"/>
+
+                 <Button
+                x:Name="PlcmntWithRepBtn"
+                Text="С повторениями"
+                Clicked="OnPlcmntWithRepClicked"/>
+
+            </HorizontalStackLayout>
+
+
+
+            <Image
+                Source="man.jpg"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+             
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.Views.PermutationsWithoutRepPage"
+             Title="">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+             <Label
+                Text="Перестановки без повторений"
+                FontSize="30"
+                Margin="50"
+                HorizontalOptions="Center" />
+            
+            <Label
+                Text="Перестановками называются такие выборки элементов, которые отличаются только порядком расположения элементов, но не самими элементами.
+Если перестановки производятся на множестве из n элементов, их число определяется по формуле "
+                FontSize="20"
+                HorizontalOptions="Center" />
+            
+            <Image
+                Source="formula1.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            
+            <Entry x:Name="EntryN"
+                   Placeholder="Введите n"/>
+            
+            
+            <Button
+                x:Name="CalculateBtn"
+                Text="Вычислить"
+                Clicked="OnCalculateClicked"/>
+
+            <Label
+                x:Name="AnswerLabel"
+                Text=""
+                TextColor="Purple"
+                FontAttributes="Bold"
+                FontSize="30"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
